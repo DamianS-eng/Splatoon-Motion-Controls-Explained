@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
   <head>
     <meta charset="UTF-8" />
     <title>Explain Splatoon Motion Controls</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark">
+	  <meta name="theme-color" media="(prefers-color-scheme: light)" content="lightblue">
+	  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="red">
     <link rel="stylesheet" href="./docs/index.css">
     <link rel="shortcut icon" type="image/x-icon" href="./docs/favicon.ico">
     <link rel="icon" type="image/x-icon" href="./docs/animated_favicon.ico">
     
 		<script src="docs/index.js" defer>
 		</script> 
-		 <script defer >
-					function nav(btn_func) {
-						if (btn_func == "sidenav-open") {
-							console.log("open pressed");
-							sidenav.removeAttribute("closed");
-							header.setAttribute("open", true);
-							return;
-							}
-						console.log("close pressed.");
-						sidenav.setAttribute("closed", true);
-						header.removeAttribute("open");
-						
-					}
+		<script defer >
+		  function nav(btn_func) {
+			  if (btn_func == "sidenav-open") {
+				  console.log("open pressed");
+					sidenav.removeAttribute("closed");
+					header.setAttribute("open", true);
+					return;
+				}
+					console.log("close pressed.");
+					sidenav.setAttribute("closed", true);
+					header.removeAttribute("open");
+      }
 		 </script>
   </head>
   <body>
@@ -34,14 +35,14 @@
         </button>
 				<nav>
 					<menu>
-				          <li><a href="#WhatsWrong">What's wrong with sticks?</a></li>
-				          <li><a href="#about-motion">About Motion</a></li>
-				          <li><a href="#HowToHold">How to hold?</a></li>
-				          <li><a href="#TheBest">The Best Settings</a></li>
-				          <li><a href="#y-button">What does the Y button do?</a></li>
-				          <li><a href="#calibrate">What is calibrate?</a></li>
-				          <li><a href="#beginner">For Beginners</a></li>
-				          <li><a href="#addendum">References</a></li>
+				    <li><a href="#WhatsWrong">What's wrong with sticks?</a></li>
+				    <li><a href="#about-motion">About Motion</a></li>
+				    <li><a href="#HowToHold">How to hold?</a></li>
+				    <li><a href="#TheBest">The Best Settings</a></li>
+				    <li><a href="#y-button">What does the Y button do?</a></li>
+				    <li><a href="#calibrate">What is calibrate?</a></li>
+				    <li><a href="#beginner">For Beginners</a></li>
+				    <li><a href="#addendum">References</a></li>
 					</menu>
 				</nav>
       </div>
@@ -80,10 +81,10 @@
         <p>Someone has done much more research on stick versus gyro aiming, and it can be found <a href="https://gyrowiki.jibbsmart.com/blog:why-not-just-use-thumbsticks">here.</a></p>
         <h3>But I <em>have</em> to use sticks.</h3>
         <p>There are several legitimate reasons to insist on using sticks without motion support.</p>
-	<ol>
-	        <li>The controller does not have support for motion controls.</li>
-	        <li>Playing games with motion controls is not physically possible, either from motion sickness or disability.</li>
-	        <li>This game is not played often, and the player wants to be comfortable in their small play sessions.</li>
+      	<ol>
+      	  <li>The controller does not have support for motion controls.</li>
+      	  <li>Playing games with motion controls is not physically possible, either from motion sickness or disability.</li>
+      	  <li>This game is not played often, and the player wants to be comfortable in their small play sessions.</li>
         </ol>
         <div class="center"><img src="" alt="No motion support"><img src="" alt="disability" ><img src="" alt="small play time, or casual"></div>
         <p class="p-center">In these cases, the below argument does not apply to you, reader. The informaion in this blog may still be interesting...</p>
@@ -92,19 +93,19 @@
         <h3>But I tried motion and it sucks. I lose matches ever since I turned them on. I gave them a chance, I'm going back to---</h3>
         <p>no, you didn't try. Take a break, change your settings in the section about <a href="#beginner">someone learning motion controls</a>, and practice for several days.</p>
         <p class="important">Stick aiming has been a stable in video games for 20 years, and it's likely still supported for longer. This is a new way to aim, and it takes time to relearn.</p>
-            <h2 id="about-motion">Motion controls are enabled, but how do they work?</h2>
-         <p>
-        </p>
+        <h2 id="about-motion">Motion controls are enabled, but how do they work?</h2>
+        <p></p>
         <h3 id="how-turn">How do I turn around?</h3>
         <h3 id="how-look">How do I look up or down? I'm used to using the right stick to do that. With motion enabled, I can't do that anymore.</h3>
-        <p class="important p-center">Unlike looking left or right, the view looking up and down is clamped; it's impossible to look past the ceiling or the floor.</p><p class="p-center"> Imagine if you could...</p>
+        <p class="important p-center">Unlike looking left or right, the view looking up and down is clamped; it's impossible to look past the ceiling or the floor.</p>
+        <p class="p-center"> Imagine if you could...</p>
         <div class="center"><img src="" alt="Someone trying to break their spine looking up" /></div>
         <h2 id="HowToHold">How should I hold the controller?</h2>
         <p>There are three main positions to consider:</p>
         <ol>
-        <li>Controller flat.</li>
-        <li>Controller angled.</li>
-        <li>Controller upright.</li>
+          <li>Controller flat.</li>
+          <li>Controller angled.</li>
+          <li>Controller upright.</li>
         </ol>
         <div class="center"><img src="" alt="controller flat"><img src="" alt="controller angle" ><img src="" alt="controller upright"></div>
         <p class="important p-center">This is a crucial answer to consider: <span class="important">Hold the controller however the player best feel comfortable, but always consider resetting to a slight angle.</span></p>
@@ -115,42 +116,42 @@
         <div class="center"><img src="" alt="motion sensitivity slider" /></div>
         <h4 id="consider-lower">Consider lowering motion sensitivity if...</h4>
         <ul>
-        <!-- Borrow images from splatoonwiki -->
-        <li>A precise weapon is used. i.e., Charger, H3-Nozzlenose, Sloshing Machine...</li>
-        <div class="center">
-        <picture>
-        <source srcset="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/4/41/S3_Weapon_Main_Splat_Charger.png/64px-S3_Weapon_Main_Splat_Charger.png">
-        <img src="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/4/41/S3_Weapon_Main_Splat_Charger.png/64px-S3_Weapon_Main_Splat_Charger.png" alt="charger" title="Charger"/>
-        </picture>
-        <picture>
-        <source srcset="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/5/5a/S3_Weapon_Main_H-3_Nozzlenose.png/64px-S3_Weapon_Main_H-3_Nozzlenose.png">
-        <img src="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/5/5a/S3_Weapon_Main_H-3_Nozzlenose.png/64px-S3_Weapon_Main_H-3_Nozzlenose.png" alt="nozzlenose" title="H3-Nozzlenose"/>
-        </picture>
-        <source srcset="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/3/38/S3_Weapon_Main_Sloshing_Machine.png/64px-S3_Weapon_Main_Sloshing_Machine.png">
-        <img src="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/3/38/S3_Weapon_Main_Sloshing_Machine.png/64px-S3_Weapon_Main_Sloshing_Machine.png" alt="sloshing" title="Sloshing Machine"/>
-        </picture>
-        </div>
-        <li>Consistently, aim feels too fast, going past targets.</li>
-        <div class="center"><img src="" alt="clip of cursor going past targets"/></div>
+            <!-- Borrow images from splatoonwiki -->
+          <li>A precise weapon is used. i.e., Charger, H3-Nozzlenose, Sloshing Machine...</li>
+          <div class="center">
+          <picture>
+            <source srcset="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/4/41/S3_Weapon_Main_Splat_Charger.png/64px-S3_Weapon_Main_Splat_Charger.png">
+            <img src="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/4/41/S3_Weapon_Main_Splat_Charger.png/64px-S3_Weapon_Main_Splat_Charger.png" alt="charger" title="Charger"/>
+          </picture>
+          <picture>
+            <source srcset="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/5/5a/S3_Weapon_Main_H-3_Nozzlenose.png/64px-S3_Weapon_Main_H-3_Nozzlenose.png">
+            <img src="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/5/5a/S3_Weapon_Main_H-3_Nozzlenose.png/64px-S3_Weapon_Main_H-3_Nozzlenose.png" alt="nozzlenose" title="H3-Nozzlenose"/>
+          </picture>
+            <source srcset="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/3/38/S3_Weapon_Main_Sloshing_Machine.png/64px-S3_Weapon_Main_Sloshing_Machine.png">
+            <img src="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/3/38/S3_Weapon_Main_Sloshing_Machine.png/64px-S3_Weapon_Main_Sloshing_Machine.png" alt="sloshing" title="Sloshing Machine"/>
+          </picture>
+          </div>
+          <li>Consistently, aim feels too fast, going past targets.</li>
+          <div class="center"><img src="" alt="clip of cursor going past targets"/></div>
         </ul>
         <h4 id="consider-higher">Consider increasing motion sensitivity if...</h4>
         <ul>
-        <li>A melee-ish weapon is used. i.e., Splat Roller, Octobrush, Splatana Wiper...</li>
-        <div class="center">
-        <picture>
-        <source srcset="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/c/c7/S3_Weapon_Main_Splat_Roller.png/64px-S3_Weapon_Main_Splat_Roller.png">
-        <img src="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/c/c7/S3_Weapon_Main_Splat_Roller.png/64px-S3_Weapon_Main_Splat_Roller.png" alt="roller" title="Roller"/>
-        </picture>
-        <picture>
-        <source srcset="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/3/3d/S3_Weapon_Main_Octobrush.png/64px-S3_Weapon_Main_Octobrush.png">
-        <img src="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/3/3d/S3_Weapon_Main_Octobrush.png/64px-S3_Weapon_Main_Octobrush.png" alt="octobrush" title="Octobrush"/>
-        </picture>
-        <source srcset="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/e/e5/S3_Weapon_Main_Splatana_Wiper.png/64px-S3_Weapon_Main_Splatana_Wiper.png">
-        <img src="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/e/e5/S3_Weapon_Main_Splatana_Wiper.png/64px-S3_Weapon_Main_Splatana_Wiper.png" alt="wiper" title="Splatana Wiper"/>
-        </picture>
-        </div>
-        <li>Aim is consistently too slow, unable to catch up to targets.</li>
-        <div class="center"><img src="" alt="clip of cursor too slow on moving targets"/></div>
+          <li>A melee-ish weapon is used. i.e., Splat Roller, Octobrush, Splatana Wiper...</li>
+          <div class="center">
+            <picture>
+              <source srcset="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/c/c7/S3_Weapon_Main_Splat_Roller.png/64px-S3_Weapon_Main_Splat_Roller.png">
+              <img src="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/c/c7/S3_Weapon_Main_Splat_Roller.png/64px-S3_Weapon_Main_Splat_Roller.png" alt="roller" title="Roller"/>
+            </picture>
+            <picture>
+              <source srcset="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/3/3d/S3_Weapon_Main_Octobrush.png/64px-S3_Weapon_Main_Octobrush.png">
+              <img src="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/3/3d/S3_Weapon_Main_Octobrush.png/64px-S3_Weapon_Main_Octobrush.png" alt="octobrush" title="Octobrush"/>
+            </picture>
+              <source srcset="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/e/e5/S3_Weapon_Main_Splatana_Wiper.png/64px-S3_Weapon_Main_Splatana_Wiper.png">
+              <img src="https://cdn.wikimg.net/en/splatoonwiki/images/thumb/e/e5/S3_Weapon_Main_Splatana_Wiper.png/64px-S3_Weapon_Main_Splatana_Wiper.png" alt="wiper" title="Splatana Wiper"/>
+            </picture>
+          </div>
+          <li>Aim is consistently too slow, unable to catch up to targets.</li>
+          <div class="center"><img src="" alt="clip of cursor too slow on moving targets"/></div>
         </ul>
         <p>Hybrid weapons like Ballpoint Splatling, Squeezer and the Dualies are up to the player's preference, but they should be able to both look around quickly and aim precisely.</p>
         <h2 id="y-button">What does the Y button do?</h2>
