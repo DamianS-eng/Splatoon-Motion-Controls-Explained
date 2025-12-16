@@ -10,26 +10,10 @@
     <link rel="stylesheet" href="./docs/index.css">
     <link rel="shortcut icon" type="image/x-icon" href="./docs/favicon.ico">
     <link rel="icon" type="image/x-icon" href="./docs/animated_favicon.ico">
-    
+    <!--
 		<script src="docs/index.js" defer>
 		</script> 
-		<script defer >
-		  function nav(btn_func) {
-			  if (btn_func == "sidenav-open") {
-				  console.log("open pressed");
-					sidenav.removeAttribute("closed");
-					header.setAttribute("open", true);
-					return;
-				}
-					console.log("close pressed.");
-					sidenav.setAttribute("closed", true);
-					header.removeAttribute("open");
-      }
-      document.querySelector('body').addEventListener('click', function(e) {
-        console.log(e);
-        console.log(sidenav);
-      }
-		 </script>
+    -->
   </head>
   <body>
     <header>
@@ -179,4 +163,23 @@
     <footer>
     </footer>
   </body>
+  <script>
+  const sidenav = document.querySelector("#sidenav");
+  const header = document.querySelector("header");
+  function nav(btn_func) {
+    if (btn_func == "sidenav-open") {
+      console.log("open pressed");
+      sidenav.removeAttribute("closed");
+      header.setAttribute("open", true);
+      return;
+    }
+      console.log("close pressed.");
+      sidenav.setAttribute("closed", true);
+      header.removeAttribute("open");
+  }
+  document.querySelector('body').addEventListener('click', function(e) {
+    console.log(e);
+    console.log(sidenav);
+  }
+ </script>
 </html>
