@@ -25,6 +25,10 @@
 					sidenav.setAttribute("closed", true);
 					header.removeAttribute("open");
       }
+      document.querySelector('body').addEventListener('click', function(e) {
+        console.log(e);
+        console.log(sidenav);
+      }
 		 </script>
   </head>
   <body>
