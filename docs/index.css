@@ -2,6 +2,7 @@
   --border-img: rgba(120, 120, 120, .6); }
 html, body {
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 body {
 	position: relative;
