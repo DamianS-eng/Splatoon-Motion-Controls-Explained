@@ -164,22 +164,22 @@
     </footer>
   </body>
   <script>
-  const sidenav = document.querySelector("#sidenav");
-  const header = document.querySelector("header");
-  function nav(btn_func) {
-    if (btn_func == "sidenav-open") {
-      console.log("open pressed");
-      sidenav.removeAttribute("closed");
-      header.setAttribute("open", true);
-      return;
+    const sidenav = document.querySelector("#sidenav");
+    const header = document.querySelector("header");
+    function nav(btn_func) {
+      if (btn_func == "sidenav-open") {
+        console.log("open pressed");
+        sidenav.removeAttribute("closed");
+        header.setAttribute("open", true);
+        return;
+      }
+        console.log("close pressed.");
+        sidenav.setAttribute("closed", true);
+        header.removeAttribute("open");
     }
-      console.log("close pressed.");
-      sidenav.setAttribute("closed", true);
-      header.removeAttribute("open");
-  }
-  document.querySelector('body').addEventListener('click', function(e) {
-    console.log(e);
-    console.log(sidenav);
-  }
+    document.querySelector('body').addEventListener('click', function(e) {
+      console.log(e);
+      console.log(sidenav);
+    });
  </script>
 </html>
